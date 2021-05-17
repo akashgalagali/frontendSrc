@@ -1,0 +1,54 @@
+<div class="bdcol">
+<div>
+    <video [autoplay]="true" [muted]="true" [loop]="true" id="myVideo" >
+        <source src="assets/forest.mp4" type="video/mp4">
+    </video>
+</div>
+<nav class=" nav1 navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="../home">HOME</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="navbar-brand" routerLink="../login">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand" routerLink="../products">Products</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="navbar-brand" routerLink="../lands">Lands</a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand" href="#">Register</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container loginform col-md-3">
+    <form>
+        <div class="form-group ">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" #email>
+        
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" #password>
+        </div>
+     
+        <div class="form-group">
+          <label >Select Role</label>
+          <select id="role" class="form-control" #role>
+            <option class="form-control"  value="admin">Admin</option>
+            <option class="form-control"  value="customer">Customer</option>              
+          </select>
+        </div>
+        <button type="submit" class="btn btn-success" (click)="validateLogin(email.value,password.value,role.value)" style="margin-top: 2%;">Submit</button>
+        
+      </form>
+</div>
+</div>

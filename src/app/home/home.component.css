@@ -1,0 +1,20 @@
+.bd{
+    background-image: url("../../assets/BlackForest.jpg");
+    background-repeat: no-repeat;
+   
+    background-size: cover;
+   
+}
+.head{
+    color: white;
+    text-align: center;
+}
+.jb{
+    background-color:lightgray;
+    padding-top: 3%;
+    padding-bottom: 1%;
+   
+}
+.jb h3,p{
+    margin-left:10%;
+}

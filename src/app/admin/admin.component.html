@@ -1,0 +1,238 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<div style="display: flex;justify-content: space-between; background-color: whitesmoke;height: 30px;">
+    <!-- <div style="margin-left: 3%;" >
+        <img src="../../assets/admin.png" alt="adminImage" width="30px" height="30px">
+
+    </div>
+    <div style="margin-right: 10px;"> 
+        <a href="" class="dropdown-item" style="color: black;">Logout</a>
+    </div> -->
+</div>
+<div style="display: flex;justify-content: space-evenly;">
+        <div class="col-md-2" style="background-color: #00FF00;color: white;text-align: center;">
+           
+            <div>
+                <p>
+                <button class="btn side" style="color: white;font-size: larger;font-weight: bold;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleAdmin" aria-expanded="false" aria-controls="collapseExampleAdmin">
+                  Admin
+                </button>
+            </p>
+              <div class="collapse" id="collapseExampleAdmin">
+                <div class="card card-body" style="background-color:#7CFC00;color: white;">                       
+                    <a class="dropdown-item" routerLink="../adminDashboard">Admin Dashboard</a>         
+                    <a class="dropdown-item" href="#">Add Admin</a>
+                        <a class="dropdown-item" href="#">Update Admin</a>
+                        <a class="dropdown-item" href="#">Get Admin details</a>     
+                        
+                </div>
+              </div>
+            </div>
+            <p>
+                <button class="btn" style="color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleProduct" aria-expanded="false" aria-controls="collapseExampleProduct">
+                  Product
+                </button>
+            </p>
+              <div class="collapse" id="collapseExampleProduct">
+                <div class="card card-body" style="background-color:#7CFC00;color: white;">                       
+                        <a class="dropdown-item" href="#">Add Product</a>
+                        <a class="dropdown-item" href="#">Update Product</a>
+                        <a class="dropdown-item" routerLink="../products">Get Product details</a>     
+                </div>
+              </div>
+               
+            <hr>
+            <div>
+                <p>
+                <button class="btn" style="color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleContract" aria-expanded="false" aria-controls="collapseExampleContract">
+                  Contract
+                </button>
+            </p>
+              <div class="collapse" id="collapseExampleContract">
+                <div class="card card-body" style="background-color:#7CFC00;color: white;">                       
+                        <a class="dropdown-item" href="#">Add Countract</a>
+                        <a class="dropdown-item" href="#">Update Contract</a>
+                        <a class="dropdown-item" href="#">Get Contract details</a>     
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div>
+                <p>
+                    <button class="btn" style="color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleland" aria-expanded="false" aria-controls="collapseExampleland">
+                     Land
+                    </button>
+                </p>
+                  <div class="collapse" id="collapseExampleland">
+                    <div class="card card-body" style="background-color:#7CFC00;color: white;">                       
+                            <a class="dropdown-item" href="#">Add Land</a>
+                            <a class="dropdown-item" href="#">Update Land</a>
+                            <a class="dropdown-item" routerLink="../lands">Get Land details</a>     
+                    </div>
+                  </div>
+            </div>
+            <hr>
+            <div>
+                <p>
+                    <button class="btn" style="color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleCustomer" aria-expanded="false" aria-controls="collapseExampleCustomer">
+                      Customer
+                    </button>
+                </p>
+                  <div class="collapse" id="collapseExampleCustomer">
+                    <div class="card card-body" style="background-color:#7CFC00;color: white;">                       
+                            <a class="dropdown-item" href="#">Add Customer</a>
+                            <a class="dropdown-item" href="#">Update Customer</a>
+                            <a class="dropdown-item" href="#">Get Customer details</a>     
+                    </div>
+                  </div>
+                
+            </div>
+            <hr>
+            <div>
+                <p>
+                    <button class="btn" style="color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleOrder" aria-expanded="false" aria-controls="collapseExampleOrder">
+                      Orders
+                    </button>
+                </p>
+                  <div class="collapse" id="collapseExampleOrder">
+                    <div class="card card-body" style="background-color:#7CFC00;color: white;">
+                            <a class="dropdown-item" href="#">Update Order</a>
+                            <a class="dropdown-item" href="#">Get Order details</a>     
+                    </div>
+                  </div>
+            </div>
+            <hr>
+            <div>
+                <p>
+                    <button class="btn" style="color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleScheduler" aria-expanded="false" aria-controls="collapseExampleScheduler">
+                      Scheduler
+                    </button>
+                </p>
+                  <div class="collapse" id="collapseExampleScheduler">
+                    <div class="card card-body" style="background-color:#7CFC00;color: white;">
+                        <a class="dropdown-item" href="#">Add Scheduler</a>    
+                        <a class="dropdown-item" href="#">Update Scheduler</a>
+                            <a class="dropdown-item" href="#">Get Scheduler details</a>     
+                    </div>
+                  </div>
+            </div>
+            <div>
+                <p>
+                    <button class="btn" style="color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleUser" aria-expanded="false" aria-controls="collapseExampleUser">
+                      User
+                    </button>
+                </p>
+                  <div class="collapse" id="collapseExampleUser">
+                    <div class="card card-body" style="background-color:#7CFC00;color: white;">
+                        <a class="dropdown-item" href="#">Add User</a>    
+                        <a class="dropdown-item" href="#">Update User</a>
+                            <a class="dropdown-item" href="#">Get User details</a>     
+                    </div>
+                  </div>
+            </div>
+            <div>
+              <p>
+                <a href="" class="btn" style="color: white;" type="button">Logout</a>
+                 
+              </p>
+                
+          </div>
+        </div>
+     
+        <div class="col-md-9" style="margin-top: 3%;">
+            <div class="row">
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Customers</h5>
+                      <p class="card-text">10</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Contracts</h5>
+                      <p class="card-text">8</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Orders</h5>
+                        <p class="card-text">41</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Land</h5>
+                        <p class="card-text">{{landCount}}</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row" style="margin-top: 2%;">
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Schedulers</h5>
+                      <p class="card-text">15</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Products</h5>
+                      <p class="card-text">{{productCount}}</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Users</h5>
+                        <p class="card-text">18</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Admins</h5>
+                        <p class="card-text">5</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div  style="text-align: center;margin:auto;margin-top: 2%;">
+              <div class="card col-md-8">
+                <div class="card-body" style="width: 100%;">
+                  <div style="display: block" >
+                    <canvas baseChart
+                      [datasets]="barChartData"
+                      [labels]="barChartLabels"
+                      [options]="barChartOptions"
+                      [plugins]="barChartPlugins"
+                      [legend]="barChartLegend"
+                      [chartType]="barChartType">
+                    </canvas>
+                  </div>
+                 
+                </div>
+        </div>
+    </div>
+     
+      
+</div>
+
